@@ -1,0 +1,22 @@
+//To calculate total, average and percentage of five subjects .
+#include<stdio.h>
+int main()
+{
+float subject_1,subject_2,subject_3,subject_4,subject_5,sub_total,avg;  
+printf("\n Enter the marks obtianed in subject1 ");
+scanf("%f",&subject_1);
+printf("\n Enter the marks obtianed in subject2 ");
+scanf("%f",&subject_2);
+printf("\n Enter the marks obtianed in subject3 ");
+scanf("%f",&subject_3);
+printf("\n Enter the marks obtianed in subject4 ");
+scanf("%f",&subject_4);
+printf("\n Enter the marks obtianed in subject5 ");
+scanf("%f",&subject_5);
+sub_total=subject_1+subject_2+subject_3+subject_4+subject_5;  
+printf("\n the total marks obtained %.2f",sub_total);
+avg=sub_total/5;
+printf("\n the average marks obtained %.2f",avg);
+printf("\n the percentage of the marks obtained %.2f" "%",(sub_total/500)*100);
+
+}
