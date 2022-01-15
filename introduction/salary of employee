@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+float basic,da,hra,pf,lic,net;  
+printf("\n Enter basic salary ");
+scanf("%f",&basic);
+printf("\n Enter da salary ");
+scanf("%f",&da);
+printf("\n Enter hra salary ");
+scanf("%f",&hra);
+printf("\n Enter pf salary ");
+scanf("%f",&pf);
+printf("\n Enter lic salary ");
+scanf("%f",&lic);
+net=basic+da+hra+pf+lic;
+printf("\n the net salary of the empolyee is Rs %.2f",net);
+return 0;
+}
