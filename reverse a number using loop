@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int a,d,reverse,i,power;
+    long int num;
+    
+    scanf("%ld",&num);
+    d=num/10;
+    if (d>10)
+    for(a=2;d>10;a++)
+    {
+        d=d/10;
+    }
+   
+    reverse=(num%10);
+    printf("%d",reverse);
+    for(i=2;i<a;i++)
+    {
+power=(pow(10,i));
+  reverse=(num % power )/(power/10);
+   
+   printf("%d",reverse);
+}
+    reverse=num/(pow(10,(a-1)));
+    printf("%d",reverse);
+}
