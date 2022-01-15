@@ -1,0 +1,16 @@
+#include <stdio.h>
+ int main() 
+{ 
+  int a, b, c, i, n; 
+  scanf("%d",&n); 
+  a = b = 1; 
+  printf("%d %d ",a,b);
+   for(i = 1;i <= n-2; i++) 
+   { 
+    c = a + b; //we first need to add the number and the preceeding number
+	printf("%d ", c); 
+	a = b; //we keep swapping digits so that the new digits can be added
+	b = c;
+	}
+    return 0; 
+}
