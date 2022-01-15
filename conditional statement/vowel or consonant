@@ -1,0 +1,13 @@
+#include<stdio.h>
+ int main() 
+ { 
+  char a_b; 
+  printf("Enter an alphabet\n");
+   scanf("%c",&a_b);
+    if ((a_b>=97&&a_b<=122)||(a_b>=65&&a_b<=90)) 
+	{ 
+	if(a_b=='a'||a_b=='e'||a_b=='i'||a_b=='o'||a_b=='u') 
+	printf("vowel"); 
+	else printf("consonant");
+	}
+  }
