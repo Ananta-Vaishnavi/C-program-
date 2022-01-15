@@ -1,0 +1,27 @@
+//this was the fist logic i came up with for this question so I do not declare it as the best
+#include<stdio.h>
+int main ()
+{
+ int a,n ,b=1,c;
+ printf("enter an integer");
+ scanf("%d",&a);//take input for a number whose nth digit must be returned
+ printf("enter the nth digit ");
+ scanf("%d",&n);//take the value of n
+ b=b<<n-1;//now we are shifiting the digits of the binary digits for the decimal number one
+ c=a&b;//we are using an and operator with the variable b which was shifted accordingly
+ /*we are using if and else because instead of directly printing the c because:- 
+ we can get more clarity by further dividing this program into two cases
+ case 1: ----When the nth digit is zero -----
+ Here since we have shifted one and then we are performing and operation there
+ is not much of a problem because we would end up getting the final answer as 0000(binary)
+ case 2: ----When the nth digit is one -----
+ here you will come across the problem because the answer could become something like
+ 1000(binary) which is equal to 8.So to avoid this we used cases 
+ */
+ if(c==0)
+ printf("The %dth digit of the number in binary form is 0",n);  
+ else 
+ printf("The %dth digit of the number in binary form is 1",n);  
+}
+
+
