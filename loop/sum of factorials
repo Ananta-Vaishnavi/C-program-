@@ -1,0 +1,19 @@
+#include<stdio.h>
+ int main()
+  {
+   int num,i,j,f=1,onum,sfacr=0; 
+   printf("enter a number"); 
+   scanf("%d",&num); onum=num; 
+   for(i=1;i<=num;i++) 
+    { 
+	 if(num%i==0) 
+	 { 
+	  for(j=1;j<=i;j++) 
+	  { 
+	  f*=j; 
+	  } 
+	  sfacr+=f; f=1; 
+	  } 
+	  } 
+	  printf("the sum of factorial of the factors is %d",sfacr);
+   }
