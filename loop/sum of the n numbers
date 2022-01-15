@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int num,i,f=1;
+    int num,i,f=0;
     printf("enter a number ");
     scanf("%d",&num);
     for(i=1;i<=num;i++)
@@ -9,6 +9,6 @@ int main()
         f=f+i;
     
     }
-    printf("%d",(f-1));
+    printf("%d",(f));
     return 0;
 }
