@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+int num,remainder,org_num,amstrong=0,power;
+
+printf("enter a three digit number");
+scanf("%d",&num);
+org_num=num;
+while(num!=0)
+{
+ remainder=num%10;
+ power=pow(remainder,3);
+ printf("%d+",power);
+ amstrong=amstrong+power;
+
+ num=num/10;
+ 
+}
+printf("\b");
+ printf("=%d",amstrong);
+if(amstrong==org_num)
+printf("\n it is an amstrong number");
+else
+printf(" \n no it is not an amstrong number");
+}
