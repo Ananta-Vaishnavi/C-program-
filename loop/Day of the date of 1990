@@ -1,0 +1,41 @@
+/*According to the Gregorian calendar, it was Monday on the date 01/01/1900. If any year is input through the keyboard write a program 
+to find out what is the day on 1st January of this year*/
+#include<stdio.h>
+int main()
+{
+int yr,year,day,leap=0;
+printf("Enter the year ");
+scanf("%d",&year);
+for(yr=1900;yr<year;yr++)
+{
+if (((yr % 4 == 0) && (yr % 100!= 0)) || (yr%400 == 0))
+leap=++leap;}
+day=(year-1900+leap+1);
+if (day>7)
+day=day%7;
+   switch (day)
+    {
+        case 1: 
+        printf("Mon");
+        break;
+        case 2:
+        printf("Tue");
+        break;
+         case 3: 
+        printf("Wed");
+        break;
+        case 4:
+        printf("Thu");
+        break;
+        case 5: 
+        printf("Fri");
+        break;
+        case 6:
+        printf("Sat");
+        break;
+         case 7: 
+        printf("Sun");
+        break;
+        
+    }
+}
