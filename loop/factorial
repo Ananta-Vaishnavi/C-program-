@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    int num,f=1,i;//we intialise f=1 so that it will not be multiplied by some garbage value
+    printf("enter a number ");
+    scanf("%d",&num);
+    for(i=1;i<=num;i++)
+    {
+        f*=i;
+    
+    }
+    printf("%d",f);//you will always have to print the value contaning factorial outside oresle that will get affected by the loop too
+}
