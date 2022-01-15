@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main()
+{
+    int num;
+
+    printf("Enter any number: ");
+    scanf("%d", &num);
+
+    switch (num > 0)
+    {
+        // Num is positive
+        case 1:// we use the logic similar to that of boolean logical operators 
+            printf("%d is positive.", num);//1 is for true and 0 is for false
+            break;
+
+        // Num is either negative or zero
+        case 0://if the number is not positive we furhter have two cases it can either be negative or zero
+            switch (num < 0)//we choose a case when it is negative
+            {
+                case 1: //if it is true
+                    printf("%d is negative.", num);
+                    break;
+                case 0://if it is false 
+                    printf("%d is zero.", num);
+                    break;
+            }
+        break;
+    }
+
+    return 0;
+}
