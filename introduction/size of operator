@@ -1,0 +1,20 @@
+#include<stdio.h> 
+int main() 
+{ 
+ 
+
+  printf("the size of int %d",sizeof(int));
+  printf("\n");
+  printf(" the size of float %d",sizeof(float)); 
+  printf("\n");
+  printf("the size of double %d",sizeof(double));
+  printf("\n"); 
+  printf("the size of char %d",sizeof(char));
+  printf("\n");
+  printf("the size of short int %d",sizeof(short int));
+  printf("\n");
+  printf("the size of long int %d",sizeof(long int));
+  printf("\n");
+   printf("the size of unsigned int %d",sizeof(unsigned int));
+}
+
