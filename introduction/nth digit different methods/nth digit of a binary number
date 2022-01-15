@@ -1,0 +1,20 @@
+#include<stdio.h> 
+int main() 
+{ 
+ int num,n; 
+ printf("enter number"); 
+ scanf("%d",&num); //get the number 
+ printf(" enter the nth digit"); 
+ scanf("%d",&n); //get the nth digit
+ 
+ printf("the bit is %d",(num>>n)&1); /*here we are shifting the digits right using bitwise operator 
+                                       and finally using a bitwise and operator
+									   example 
+									   number =4
+									   nth =2
+									   then 0100>>2=0001
+									               &0010
+ 										             =0000 
+											hence we can get the required number this way */
+                                       
+}
