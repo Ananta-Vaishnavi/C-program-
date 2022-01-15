@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+ int sp,cp; 
+ printf("Enter selling price"); 
+ scanf("%d",&sp); 
+ printf("\n Enter cost price"); 
+ scanf("%d”,&cp); 
+ if (sp>cp) 
+ printf("\nThe profit is %d",sp-cp); 
+ else 
+ printf("\nThe loss is %d",cp-sp); 
+ return 0; 
+ }
+
+
