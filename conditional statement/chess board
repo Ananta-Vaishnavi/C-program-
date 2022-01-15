@@ -1,0 +1,28 @@
+//to find weather the block of the chess board is black or white
+#include<stdio.h> 
+int main() 
+{ 
+int i,j; 
+printf("enter the number of rows"); 
+scanf("%d",&i); 
+printf("enter the number of coloumn"); 
+scanf("%d",&j); 
+if(j%2==0) 
+{ 
+ if(i%2==0) 
+ { 
+ printf("white");  
+ } 
+ else 
+ printf("black"); 
+} 
+else 
+{ 
+if(i%2==0) 
+ { 
+  printf("black");  
+ } 
+ else 
+    printf("white");  
+} 
+}
