@@ -1,0 +1,17 @@
+#include<stdio.h> 
+int main() 
+{ 
+ int n,a;
+ printf("number here"); 
+ scanf("%d",&n);
+ a=n%2; 
+ switch(a) 
+ { 
+  case 0: 
+  printf("It is divisible by zero"); 
+  break; 
+  case 1:
+  printf("It is not divisible by zero"); 
+  break; 
+  } 
+  }
