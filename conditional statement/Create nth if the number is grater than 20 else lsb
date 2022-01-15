@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+
+{
+ int num,n;
+ printf("\a Enter the number");
+ scanf("%d",&num);
+ if(num>20)
+ printf("The lsb of the no. is %d", num&1);  
+ else if(num<=20) 
+  {
+  printf("\a Enter the n");
+  scanf("%d",&n); 
+  printf("the num of nth digit is%d",(num>>n)&1); 
+  }
+}
