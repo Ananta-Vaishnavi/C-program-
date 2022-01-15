@@ -1,0 +1,9 @@
+#include<stdio.h>
+#include<math.h>//a function library in the C language to implement basic mathematical functions
+int main()
+
+{
+float a=2;
+
+ printf("%f",sqrt(a));
+}
