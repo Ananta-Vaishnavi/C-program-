@@ -1,0 +1,20 @@
+/*A library charges a fine for every book returned late.
+For first 5 days the fine is 50 paise, for 6-10 days fine is one rupee and above 10 days fine is 5 rupees. 
+If you return the book after 30 days your membership will be cancelled.
+Write a program to accept the number of days the member is late to return the book and display the fine or the appropriate message.*/
+ #include<stdio.h>
+ int main(void) 
+{ 
+ int days; 
+ printf("Enter the no.of days you kept the book with you "); 
+ scanf("%d",&days); 
+ if (days==5) 
+ printf("The fine is 50 paise."); 
+ else if (days>=6&&days<=10) 
+ printf ("The fine is 1 Rupee."); 
+ else if (days>10&&!(days>30)) 
+ printf ("The fine is 5 Rupee.");
+ else if (days>30) 
+ printf ("Your membership will be cancled."); 
+ }
+
