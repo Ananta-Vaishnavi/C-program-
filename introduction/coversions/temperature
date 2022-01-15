@@ -1,0 +1,11 @@
+// this program converts the temperature scale of fahrenheit to centigrade 
+#include<stdio.h> 
+int main() 
+{ 
+ float f,c; 
+ printf("enter the temperature in fahrenheit"); 
+ scanf("%f",&f) 
+ c=(f-32)/1.8)); 
+ printf("the temperature in celcius is %f",c); 
+ }
+
