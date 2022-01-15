@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+
+{
+int p,t,r;
+float a,c;
+printf("Enter principle");
+scanf("%d",&p);
+printf("Enter time");
+scanf("%d",&t);
+printf("Enter rate");
+scanf("%d",&r);
+if(r>3)
+{
+a=(p*t*r)/100;
+printf("%f",a);
+}
+else if(r<=3)
+{
+ a=pow(p*(1+(r/100)),t);
+ c=a-p;
+ printf("%f",c);
+}
+
+}
