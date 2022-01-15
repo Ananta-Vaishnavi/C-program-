@@ -1,0 +1,10 @@
+//convert area from meterssquare to centimetresquare
+#include<stdio.h>
+int main()
+{
+  float m2;
+printf("enter area in meter square");
+scanf("%f",&m2);
+printf("\n the area in centi meter sqare %f cm^2",(m2*10000));
+return 0;
+}
