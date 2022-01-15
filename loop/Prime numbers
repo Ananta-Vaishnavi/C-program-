@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+int i,num,n;
+scanf("%d",n);
+for(num=2;n<=1000 ;num++)
+{
+for(i=2;i<=num;i++)
+{ if(num%i==0)
+break;
+}
+if(i==num)
+printf("\n%d is Prime",num);
+}
+}
