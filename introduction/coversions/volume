@@ -1,0 +1,12 @@
+//convert volume from metercube to centimetrecube
+#include<stdio.h>
+int main()
+{
+  float m3;
+printf("enter volume in meter cube");
+scanf("%f",&m3);
+printf("\n the volume in centi meter cube %f",(m3*1000000));
+return 0;
+}
+
+
