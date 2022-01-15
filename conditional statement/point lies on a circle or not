@@ -1,0 +1,21 @@
+#include <stdio.h> 
+#include<math.h> 
+int main() 
+{ 
+ int X,Y,x,y,r; 
+ printf("Enter the radius of the circle"); 
+ scanf("%d",&r); printf("Enter the center of the circle"); 
+ scanf("%d %d",&x,&y); 
+ printf("Enter the points on the plane");
+  scanf("%d %d",&X,&Y); 
+  if (pow((X-x),2)+pow((Y-y),2)-pow(r,2)==0) 
+  printf("it lies on the circle"); 
+  if (pow((X-x),2)+pow((Y-y),2)-pow(r,2)<0) 
+  { 
+   printf("it lies inside"); 
+  } 
+  if (pow((X-x),2)+pow((Y-y),2)-pow(r,2)>0) 
+  { 
+   printf("it lies outside the circle"); 
+  } 
+  }
