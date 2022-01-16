@@ -1,0 +1,39 @@
+#include<stdio.h> 
+int main()
+ { 
+ int a,b,lcm=1,x,j,i; 
+ printf("enter two number to find lcm "); 
+ scanf("%d %d",&a,&b);
+  if(a<b)
+  x=a;
+   else if (a>b)
+    x=b; 
+	else if (a==b) 
+	lcm=a; 
+	for(i=2;i<=x;i++)
+	//prime numbers till the least number
+	 { 
+	 for(j=2;j<=i;j++) 
+	 { 
+	 if (i%j==0) 
+	 break;
+	  }
+	   if (i==j)
+	    { 
+		while(a%i==0||b%i==0) 
+		//dividing the numbers until all
+		 //three are diviible by the prime
+		  { if(a%i==0&&b%i==0)
+		  //checking the conditions to divide 
+		  { a/=i; lcm*=i; b/=i; }
+		   else if(a%i!=0&&b%i==0) 
+		   { lcm*=i; b/=i; } 
+		   else if(a%i==0&&b%i!=0) 
+		   { a/=i; lcm*=i; 
+		   }
+		   }
+		   }
+		   }
+		    printf("%d",lcm*a*b);
+			//printing the answer by multiplying with the number 
+			}
