@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int i,a,d,r,c,j;
+    long long int num;//we take in a really really long number
+    
+    scanf("%lld",&num);
+    d=num;
+    if (d>10)
+    for(a=1;d>=0;a++)
+    {
+        d=d/10;//we do this to find the number of digtis so that we can add preceeding one s accordingly
+    }
+    c=31-a;
+    for(j=0;j<c;j++)
+    {
+      printf("1");
+      }
+    while(a>=0)
+    {
+        r=num/pow(10,a);//we are first dividing the numebr with the power of ten with the number of digits
+        num=(num-(r*(pow(10,a))));//we then vanish the first digit by subtracting the digit with the power 
+        if (r==1)//we convert here then and there itself
+      printf("0");
+      else if(r==0)
+      printf("1");
+        a--;
+     
+  
+  }}
