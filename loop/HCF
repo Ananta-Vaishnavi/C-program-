@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+  int a,b,hcf=1,x,j,i;
+  printf("enter two number to find hcf ");
+  scanf("%d %d",&a,&b);
+  if(a<b)
+  x=a;
+  else if (a>b)
+  x=b;
+  else if (a==b)
+  hcf=a;
+  for(i=2;i<=x;i++)
+  {
+    for(j=2;j<=i;j++)
+    {
+     if (i%j==0)
+     break;
+    }
+   if (i==j)
+   {
+   while(a%i==0&&b%i==0)
+   {
+    if(a%i==0&&b%i==0)
+    {
+    a/=i;
+    hcf*=i;
+    b/=i;
+      }}}}
+       printf("%d",hcf);
+}
