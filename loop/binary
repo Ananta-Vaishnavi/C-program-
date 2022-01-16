@@ -4,24 +4,25 @@ int main()
     int num,a,i,b,j,k,l,d;
     scanf("%d",&num);
     a=num;
-    for (i=0;a>1;i++)
+    for (i=0;a>1;i++)//i is the max no.of times you can divide the given num by 2
     {
-        a=a/2;
+        a=a/2;//To find the number of digits that sholuld be preceeding 
     }
-   b=8-(i+1);
+   b=8-(i+1);//we print the number of zeroes accordingly
    for(j=0;j<b;j++)
     {
       printf("0");
       }
      printf("1");
-        for(k=i;k>0;k--)
+     //here we are using two loops so that we write the varaibles in a reverse order
+        for(k=i;k>0;k--)//we use the "i" obtained above here and decrement it then and there
         {
-          a=num;
+          a=num;//we assure that the a still contains the number
          for(l=1;l<k;l++)
          {
-             a=a/2;
+             a=a/2;//we then divide a by two until we get the required number
          }
-         d=a%2;
+         d=a%2;//after dividing it for the req amounts of time we finally take the mod of the number by 2
         printf("%d",d);   
         }
        
