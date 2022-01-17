@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main()
+{
+    int arr1[100], n,p=0;
+    int i, j, k;
+       
+       printf("size of the array here ");
+       scanf("%d",&n);
+       for(i=0;i<n;i++)
+            {
+	     scanf("%d",&arr1[i]);
+	    }
+    for(i=0; i<n; i++)
+    {
+        p=0;
+        for(j=0,k=n; j<k+1; j++)
+        {
+            /*Increment the value is duplicate.*/
+            
+		       if((i!=j)&&arr1[i]==arr1[j])
+              {
+                 p++;
+               }
+        }
+       if(p==0)
+        {
+          printf("---%d---\n",arr1[i]);
+        }
+    }
+    
+}
