@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main() 
+{   
+ int n,a[n],i,j,l=0; 
+ printf("enter the range of the array\n");
+ scanf("%d",&n);
+ for(int p=0;p<n;p++)
+ {
+ scanf("%d",&a[p]);
+}
+for(i=0;i<n;i++)
+ {
+ for(j=0;j<n;j++)
+ {
+ 	if(i==j)
+ 	continue;
+   if (a[i]==a[j])
+   l++;
+  }
+  }
+printf("\nthe number of duplicate values are %d",l/2);
+   
+}
