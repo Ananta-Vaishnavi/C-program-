@@ -1,0 +1,38 @@
+#include<stdio.h>
+int main() 
+{   
+ int n,a[n],b[n],i,j,l=0,c[n]; 
+ printf("enter the range of the array\n");
+ scanf("%d",&n);
+ for(int p=0;p<n;p++)
+ {
+ scanf("%d",&a[p]);
+}
+for(int y=0;y<n;y++)
+ {
+ c[y]=a[y];
+}
+for(i=0;i<n;i++)
+ {
+ for(j=0;j<n;j++)
+ {
+ 	if(i==j)
+ 	continue;
+   if (a[i]==a[j])
+   a[j]=0;
+  }
+  }
+  
+for(int k=0;k<n;k++)
+{
+  if(a[k]!=0||(c[k]==0&&a[k]==0))
+   {
+   	b[l]=a[k];
+   	l++;
+   }
+}
+for(int k=0;k<l;k++)
+{
+   printf("\n---%d",b[k]);
+}
+}
