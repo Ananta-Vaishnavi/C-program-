@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<math.h>
+int armstrong (int num)
+{
+int remainder,org_num,amstrong=0,power;
+org_num=num;
+while(num!=0)
+{
+ remainder=num%10;
+ power=pow(remainder,3);
+ amstrong=amstrong+power;
+
+ num=num/10;
+ 
+}
+if(amstrong==org_num)
+return 1;
+else
+return 0;
+}
+int main()
+{   int num,yn;
+    scanf("%d",&num);
+	yn=armstrong(num);
+	if(yn==1)
+    printf("yes");
+    else if (yn==0)
+    printf("no");
+}
