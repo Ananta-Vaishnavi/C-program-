@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+int a,b,temp;
+scanf("%d",&a);
+scanf("%d",&b);
+int*p,*q;
+p=&a;
+q=&b;
+temp=*p;
+*p=*q;//here we dereferincing the pointer with the *operator
+*q=temp;
+printf("%d %d",a,b);
+
+}
