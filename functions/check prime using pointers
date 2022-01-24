@@ -1,0 +1,24 @@
+#include<stdio.h>
+int prime(int);
+int prime(int num)
+{ int i;
+ for(i=2;i<=num;i++)
+ { 
+ if(num%i==0)
+break;
+ }
+  if(i==num)
+  return 1;
+  else
+  return 0;
+}
+int main()
+{
+  int num,a;
+  scanf("%d",&num);
+  a=prime(num);	
+  if (a==1)
+  printf("yes");
+  else if (a==0)
+  printf("no");
+}
