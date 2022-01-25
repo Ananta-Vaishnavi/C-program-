@@ -1,0 +1,32 @@
+#include <stdio.h>
+int strong(int);
+int strong(int n) 
+{
+    int rem,i,strong=0,f=1,num;
+    num=n;
+    while (n!= 0)
+  {
+        rem = n % 10;
+       f=1;
+        for(i=1;i<=rem;i++)
+    {
+        f*=i;
+    }
+    strong+=f;
+        n /= 10;
+    }
+    if(num==strong)
+    return 1;
+    else
+    return 0;
+}
+int main()
+{
+	int num,a;
+	scanf("%d",&num);
+	a=strong(num);
+	if (a==1)
+	printf("yes");
+	else
+	printf("no");
+}
