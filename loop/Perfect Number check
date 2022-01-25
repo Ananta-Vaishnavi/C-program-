@@ -7,6 +7,7 @@ int num,i,perfect=0,onum;//we took perfect as zero to avoid any garbage value
 printf("enter a number");
 scanf("%d",&num);
 onum=num;
+f=1;
 for(i=1;i<num;i++)
 {
 
