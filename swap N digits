@@ -2,13 +2,13 @@
 int main()
 {
 	int a,temp;
+	a:
 	printf("enter the number of digits you want to swap\n");
 	scanf("%d",&a);
 	if(a==1||a==0)
 	{
 	printf("please enter a number greater than 1\n \n \n");
-	printf("enter the number of digits you want to swap\n");
-	scanf("%d",&a);
+	goto a;
     }
 	int s[a];
 	printf("\nenter the numbers you want to swap\n");
