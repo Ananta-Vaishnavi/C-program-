@@ -1,0 +1,58 @@
+#include<stdio.h>
+int main()
+{
+	int a,temp;
+	printf("enter the number of digits you want to swap\n");
+	scanf("%d",&a);
+	if(a==1||a==0)
+	{
+	printf("please enter a number greater than 1\n \n \n");
+	printf("enter the number of digits you want to swap\n");
+	scanf("%d",&a);
+    }
+	int s[a];
+	printf("\nenter the numbers you want to swap\n");
+	for(int i=0;i<a;i++)
+	{
+		scanf("%d",&s[i]);
+	}
+	if (a%2==0)
+	{
+		for(int i=0;i<a/2;i++)
+		{
+			temp=s[i];
+			s[i]=s[a-(i+1)];
+			s[a-(i+1)]=temp;
+		}
+		for(int i=0;i<a;i++)
+	{
+		printf("\n %d",s[i]);
+	}
+	}
+    else if (a%2!=0)
+	{
+		for(int i=0;i<a/2;i++)
+		{
+			if(i==0)
+			{
+			temp=s[a/2];
+			s[(a/2)]=s[(a/2)-1];
+			s[(a/2)-1]=s[(a/2)+1];
+			s[(a/2)+1]=temp;
+		   }
+		else if(i!=a/2)
+		{
+		for(int i=0;i<(a/2)-1;i++)
+		{
+			temp=s[i];
+			s[i]=s[a-(i+1)];
+			s[a-(i+1)]=temp;
+		}	
+		}
+		}
+		for(int i=0;i<a;i++)
+	{
+		printf("%d ",s[i]);
+	}
+	}
+}
