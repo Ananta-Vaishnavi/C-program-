@@ -1,0 +1,14 @@
+#include<stdio.h>
+int i=0;
+int numdig(int num)
+{
+    i++;
+	if (num>10)
+	numdig(num/10);
+	return i;
+}
+int main()
+{   int n;
+  	scanf("%d",&n);
+  	printf("%d",numdig(n));
+} 
