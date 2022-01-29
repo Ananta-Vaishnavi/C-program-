@@ -1,0 +1,14 @@
+#include<stdio.h>
+int s=0;
+int sum (int num)
+{
+	s+=num%10;
+	if(num>0)
+	sum(num/10);
+    return s;
+}
+int main()
+{   int n;
+  	scanf("%d",&n);
+  	printf("%d",sum(n));
+}   
