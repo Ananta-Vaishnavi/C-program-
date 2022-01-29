@@ -1,0 +1,19 @@
+#include<stdio.h>
+int s=0;//we need to take it as gloabal variable only then it will not 
+        //have seperate value each time we call it
+void sum(int n)
+{  
+  
+  if(n==0)
+  return;
+  else
+  sum(n-1);
+  s+=n;
+ 
+}
+int main()
+{ 
+sum(3);
+printf("%d",s);//we will have it to print it outside so that we 
+              //need not print it again and again
+}
