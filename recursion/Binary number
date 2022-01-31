@@ -1,0 +1,18 @@
+#include<stdio.h>
+void binary(int);
+int main()
+{
+  int num;
+ scanf("%d",&num);
+ printf("1");
+  binary(num);
+}
+void binary(int n)
+{
+  if(n<2)
+  return;
+  else
+  binary(n/2);
+  printf("%d",n%2);
+  
+}
