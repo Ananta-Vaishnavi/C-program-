@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+    int n,p=0;
+    int i, j, k,m;
+       
+       printf("size of the array here ");
+       scanf("%d",&n);
+       int arr1[n];
+       for(i=0;i<n;i++)
+        {
+	     scanf("%d",&arr1[i]);
+	    }
+	    printf("what is the element you want to search");
+	    scanf("%d",&m);
+    for(i=0; i<n; i++)
+    {
+       if(arr1[i]==m) 
+       printf("%d ",i);
+    }
+    
+}
