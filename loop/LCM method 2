@@ -1,0 +1,19 @@
+#include<stdio.h> 
+int main()
+{
+	int a,b,max,i;
+	scanf("%d %d",&a,&b);
+	if(a>b)
+	max=a;
+	else if(a<b)
+	max=b;
+    else if(a==b)
+    max=a;
+	for( i=max;;i+=max)
+	{
+		if(i%a==0&&i%b==0)
+		break;
+		
+	}
+	printf("%d",i);
+}
