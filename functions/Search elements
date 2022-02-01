@@ -1,0 +1,32 @@
+#include <stdio.h>
+ int n;
+int main()
+{
+   printf("number of elements here\n");
+   scanf("%d", &n);
+   int array[n];
+   printf("Enter the vlues to be stored \n");
+   for (int c = 0; c < n; c++)
+   {
+   scanf("%d", &array[c]);
+}
+     
+   printf("What is the elment you want to search\n");
+   scanf("%d", &search);
+}   
+   void search(int [])
+   {
+    int search, i, l = 0;
+   for (i = 0; i < n; i++) {
+      if (array[i] == search) {
+         printf("%d is present at location %d.\n", search, i+1);
+         l++;
+      }
+   }
+   if (l == 0)
+      printf("%d isn't present in the array.\n", search);
+   else
+      printf("%d is present %d times in the array.\n", search, l);
+     
+   return 0;
+}
