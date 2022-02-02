@@ -1,0 +1,18 @@
+#include<stdio.h>
+int p=0;
+int x;
+void pro(int a,int b)
+{
+   x++;
+   p+=a;
+   if(x<b)
+   pro(a,b);
+   else return;
+   }
+  int main()
+  {
+      int a,b;
+      scanf("%d %d",&a,&b);
+      pro(a,b);
+      printf("%d",p);
+  }
