@@ -1,0 +1,14 @@
+#include <stdio.h>
+void sum(int* p,int* q)
+{   
+    int s;
+    s=*p+*q;
+    printf("%d",s);
+	}
+	int main()
+	{	int a,b,*p,*q;
+	    scanf("%d %d",&a,&b);
+	    p=&a;
+	    q=&b;
+		sum(p,q);
+	}
