@@ -9,7 +9,7 @@ int main()
 		scanf("%d",&a[i]);
 	    }
 	   int mid=(n-1)/2;
-	   printf("enter the number you want to search %d",mid);
+	   printf("enter the number you want to search");
 		scanf("%d",&num);
 		
 		if (num==a[mid])
