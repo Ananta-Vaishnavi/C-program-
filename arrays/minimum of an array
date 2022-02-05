@@ -15,12 +15,13 @@ int main()
 		{
 			if (i==j)
 			continue;
-			else (a[i]>=a[j]);
+			else if (a[i]<=a[j])
 			b++;
 		}
 	if(b==n)	
-	{
+	{   
 		printf("%d",a[i]);
+		break;
 	
 	}
 	}
