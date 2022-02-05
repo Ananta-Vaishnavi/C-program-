@@ -21,6 +21,7 @@ int main()
 	if(b==n)	
 	{
 		printf("%d",a[i]);
+		break;
 	
 	}
 	}
