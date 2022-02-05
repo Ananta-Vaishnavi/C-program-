@@ -1,0 +1,36 @@
+#include<stdio.h>
+int main()
+	{
+		int n,num;
+		scanf("%d",&n);
+		int a[n];
+		for(int i=0;i<n;i++)
+		{
+		scanf("%d",&a[i]);
+	    }
+	   int mid=(n-1)/2;
+	   printf("enter the number you want to search %d",mid);
+		scanf("%d",&num);
+		
+		if (num==a[mid])
+		printf("%d",mid+1);
+		
+		else if(num>mid)
+		{
+		for(int i=mid;i<n;i++)
+			{
+				if(num==a[i])
+			   printf("%d",i+1);
+	      }
+	  }
+		else if(num<mid)
+		{
+		
+		for(int i=0;i<mid;i++)
+		{
+			if(num==a[i])
+			printf("%d",i+1);
+		}
+		
+}}
+	
