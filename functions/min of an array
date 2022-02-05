@@ -1,0 +1,32 @@
+#include<stdio.h>
+void max(int n)
+{
+ int a[n];
+ for(int i=0;i<n;i++)
+{ int num;
+	scanf("%d",&num);
+	a[i]=num;
+}
+	for(int i=0;i<n;i++)
+	{   int b=1;
+		for(int j=0;j<n;j++)
+		{
+			if (i==j)
+			continue;
+			else if (a[i]<=a[j])
+			b++;
+		}
+	if(b==n)	
+	{
+		printf("%d",a[i]);
+		break;
+	
+	}
+	}
+}
+int main()
+{
+ int n;
+ scanf("%d",&n);
+ max(n);
+}
