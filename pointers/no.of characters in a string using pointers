@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+	int num=5,*p,fact=1;
+	scanf("%d",&num);
+	int a[num+1];
+	a[0]=1;
+	for(int i=1;i<=num;i++) 
+	{
+		a[i]=i;
+   }
+   p=a;
+   	int i=0;
+   while(i!=num+1)
+   {
+     fact=fact*(*p);
+     p++;
+     i++;
+   }
+   printf("%d",fact);
+}
