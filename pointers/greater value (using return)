@@ -1,0 +1,17 @@
+#include<stdio.h>
+int* larger(int *a,int *b)
+{
+	if(*a>*b)
+	return a;
+	else
+	return b;
+}
+int main()
+{
+	int a,b,*p,*q,*ans;
+	scanf("%d %d",&a,&b);
+	p=&a;
+	q=&b;
+	ans=larger(p,q);
+	printf("%d",*ans);
+}
