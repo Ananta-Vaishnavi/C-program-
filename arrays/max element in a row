@@ -5,7 +5,7 @@ int main()
 	printf("enter number of rows and coloums");                
    scanf("%d %d",&m,&n);  
     int arr[m][n];   
-		prinf("enter the elements");      
+		printf("enter the elements");      
    for(int i=0;i<m;i++)    
     {
         for(int j=0;j<n;j++)
