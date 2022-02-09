@@ -1,9 +1,11 @@
 #include<stdio.h>
 int main()
 {
-    int m,n;                 
+    int m,n; 
+	prinf("enter number of rows and coloums");                
    scanf("%d %d",&m,&n);  
-    int arr[m][n];        
+    int arr[m][n];   
+		prinf("enter the elements");      
    for(int i=0;i<m;i++)    
     {
         for(int j=0;j<n;j++)
@@ -13,6 +15,7 @@ int main()
     }
    
     int row,c=1;
+    	prinf("enter the row");      
     scanf("%d", &row);
     
     for(int i=0;i<n;i++)    
