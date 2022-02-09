@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{
+    int m,n; 
+	printf("enter number of rows and coloums\n");                
+   scanf("%d %d",&m,&n);  
+    int arr[m][n];   
+		printf("enter the elements\n");      
+   for(int i=0;i<m;i++)    
+    {
+        for(int j=0;j<n;j++)
+        {
+            scanf("%d",&arr[i][j]);
+        }
+    }
+   
+    int coloumn,c=1;
+    	printf("enter the coloumn ");      
+    scanf("%d", &coloumn);
+    
+    for(int i=0;i<m;i++)    
+    {   c=1;
+        for(int j=0;j<m;j++)
+        {   if(i==j)
+            continue;
+            else if (arr[i][coloumn]>arr[j][coloumn])
+            c++;
+        }
+        if(c==m)
+        printf("%d",arr[i][coloumn]);
+    }
+   
+}
