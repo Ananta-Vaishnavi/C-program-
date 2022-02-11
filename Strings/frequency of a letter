@@ -6,7 +6,7 @@ int main()
 	int b=0;
 	scanf("%s",s);
 	int a=strlen(s);
-    scanf(" %c",&c);
+    scanf(" %c",&c);//to make sure the lette that is given is stored in the variable
 	
 		for(int i=0;i<a;i++)
 		{
