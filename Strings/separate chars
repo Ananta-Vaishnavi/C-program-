@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main()
+{
+    char str[100];
+    int l= 0;
+	gets(str);
+	   
+    while(str[l]!='\0')
+    {
+       printf("%c  ", str[l]);
+       l++;
+    }
+   
+}
