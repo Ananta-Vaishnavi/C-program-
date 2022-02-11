@@ -14,3 +14,4 @@ int main()
 			b++;
 		}
 	printf("%d",b);
+	}
