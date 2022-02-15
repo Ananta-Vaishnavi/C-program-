@@ -1,0 +1,55 @@
+#include <stdio.h>
+
+int main()
+{
+  int r1,r2,c1,c2;
+  
+  scanf("%d %d",&r1,&c1);
+  scanf("%d %d",&r2,&c2);
+  int a1[r1][c1],a2[r2][c2],c[r1][c2];
+  if(c1!=r2){
+      printf("Mutiplication of Matrix is not possible.");
+      
+  }
+  else
+      {
+      
+       for(int i=0;i<r1;i++)
+        {
+            for(int j=0;j<c1;j++)
+            {
+	         scanf("%d",&a1[i][j]);
+            }
+        }   
+   
+       for(int i=0;i<r2;i++)
+        {
+            for(int j=0;j<c2;j++)
+            {
+	          scanf("%d",&a2[i][j]);
+            }
+        }    
+ 	 
+  	  
+             for(int i=0;i<r1;i++)    
+                 { 
+                   for(int j=0;j<c2;j++)    
+                     {  
+                       int sum=0;
+                         for(int k=0;k<c1;k++)
+                           sum=sum+a1[i][k]*a2[k][j];
+                           c[i][j]=sum;
+                     }
+                 }
+ 
+  for(int i=0;i<r1;i++)
+     {
+        printf("\n");
+        for(int j=0;j<c2;j++)
+         {
+           printf("%d ",c[i][j]);
+         }
+     }
+  }
+
+}
