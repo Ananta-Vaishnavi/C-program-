@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<string.h>
+//concatenate without using a function
+int main()
+{
+char a[34],b[40];
+gets(a);
+gets(b);
+char c[80];
+
+for(int i=0;i<strlen(a);i++)
+{  
+	c[i]=a[i];
+
+}
+
+	a[strlen(a)]=32;
+
+for(int i=0;i<strlen(b);i++)
+{  
+	c[strlen (a)+i]=b[i];
+
+}
+for(int i=0;i<strlen(b)+strlen(a);i++)
+{  
+	printf("%c",c[i]);
+
+}
+
+}
