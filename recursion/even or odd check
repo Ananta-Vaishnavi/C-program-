@@ -1,0 +1,19 @@
+#include<stdio.h>
+int even_odd(int num)
+{
+	num=num-2;
+	if(num>1)
+	even_odd(num);
+	else
+	return num;
+}
+int main()
+{
+	int num,res;
+	scanf("%d",&num);
+	res= even_odd(num);
+	if(res==0)
+	printf("even");
+	else 
+	printf("odd");
+}
