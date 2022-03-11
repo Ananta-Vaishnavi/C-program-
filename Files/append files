@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main()
+{
+	FILE *fp;
+	fp=fopen("---give the path of the file---","a");
+	fputs("\n appended sucessfully",fp);
+	fclose(fp);
+}
