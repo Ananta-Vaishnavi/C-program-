@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+	FILE *fp;
+	char ch='a';
+	fp=fopen("---give the path of the file---","w");
+	fputs("\n hi",fp);
+	fclose(fp);
+}
