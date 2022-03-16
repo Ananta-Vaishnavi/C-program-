@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main() {
-    int n,onum rev = 0, remainder;
+    int n,onum,rev = 0, remainder;
     printf("Enter an integer: ");
     scanf("%d", &n);
     onum=n;
