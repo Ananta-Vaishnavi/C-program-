@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+    int n,onum rev = 0, remainder;
+    printf("Enter an integer: ");
+    scanf("%d", &n);
+    onum=n;
+    while (n != 0) {
+        remainder = n % 10;
+        rev = rev * 10 + remainder;
+        n /= 10;
+    }
+    if(rev==onum)
+    printf("Palindeome");
+    else
+    printf("Not palindrome");
+    return 0;
+}
