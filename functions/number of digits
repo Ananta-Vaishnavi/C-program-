@@ -9,8 +9,9 @@ num/=10;
 }
 printf("%d",a);
 }
-int main (int n)
+int main ()
 {
+int n;
 scanf("%d",&n);
 NoOfDigits(n);
  return 0;
